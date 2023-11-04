@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  -webkit-user-select: none;
+}
+
+body {
+  /* width: 100%; */
+  height: 100vh;
+}
+
+#main-container {
+  width: 100%;
+  /* height: 100%; */
+  opacity: 0;
+  transition-duration: 2s;
+}
+
+#main-logo {
+  width: 10%;
+  position: absolute;
+  /* top: 5px; */
+  left: 0.5%;
+  z-index: 1;
+}
+
+#main-logo:hover {
+  cursor: pointer;
+}
+
+#yuuka-card {
+  /* pointer-events: none; */
+  width: 20%;
+  height: 80%;
+  position: absolute;
+  top: 8%;
+  right: 2%;
+  overflow: scroll;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#yuuka-card a {
+  text-decoration: none;
+  color: black;
+}
+
+#timer {
+  width: 40%;
+  /* height: 40%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#timer > .card {
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  /* filter: blur(5px); */
+  /* -webkit-filter: blur(5px); */
+}
+
+/* #timer .card-body {
+  margin: 10px;
+} */
+
+.time {
+  width: 100%;
+  text-align: center;
+  font-size: 6vw;
+}
+
+.time input {
+  border: none;
+}
+
+.time input:focus {
+  outline: none;
+  color: transparent;
+  /* text-shadow: 0 0 0 #1288f8; */
+  text-shadow: 0 0 0 black;
+}
+
+#timer button {
+  width: 100%;
+  position: relative;
+  background-color: #1288f8;
+  font-size: 20px;
+  /* bottom: 4%; */
+  margin-bottom: 5px;
+}
+
+#timer button:hover {
+  opacity: 0.5;
+}
+
+#yuuka-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('./img/yuuka-back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition-duration: 2s;
+}
+
+#left {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+
+#logo {
+  width: 95%;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  /* transform: translateX(-55%); */
+}
+
+#start-btn {
+  width: 95%;
+  position: absolute;
+  top: 64%;
+  left: 5%;
+  background-color: #1288f8;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#start-btn:hover {
+  opacity: 0.5;
+}
+
+#yuuka-profile {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+
+#yuuka-profile-photo {
+  width: 100%;
+  position: relative;
+  top: 10px;
+  left: 80px;
+}
+
+#yuuka-profile-photo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#progress-bar {
+  width: 0%;
+  transition-property: width;
+  /* transition-duration: 0s; */
+  /* transition-timing-function: linear; */
+}
+
+/* @media screen and (max-width: 1279px) {
+  .time {
+    font-size: 6vw;
+  }
+} */
