@@ -164,13 +164,6 @@ body {
 
 #progress-bar {
   width: 0%;
+  height: 20px;
   transition-property: width;
-  /* transition-duration: 0s; */
-  /* transition-timing-function: linear; */
 }
-
-/* @media screen and (max-width: 1279px) {
-  .time {
-    font-size: 6vw;
-  }
-} */
