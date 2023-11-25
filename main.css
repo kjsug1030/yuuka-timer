@@ -48,7 +48,6 @@ body {
 
 #timer {
   width: 40%;
-  /* height: 40%; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -70,12 +69,12 @@ body {
 } */
 
 .time {
-  width: 100%;
   text-align: center;
   font-size: 6vw;
 }
 
 .time input {
+  width: 7vw;
   border: none;
 }
 
